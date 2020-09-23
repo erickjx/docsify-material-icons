@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <!-- https://jhildenbiddle.github.io/docsify-themeable/ -->
+    <!-- Theme: Simple -->
+    <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css" />
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"/>
+    <style>
+      .red {
+        color: red;
+      }
+      .blue {
+        color: blue;
+      }
+      .orange {
+        color: orange;
+      }
+      .red-svg {
+        filter: invert(8%) sepia(94%) saturate(4590%) hue-rotate(358deg) brightness(101%) contrast(112%);
+      }
+      .blue-svg {
+        filter: invert(0.5) sepia(1)  saturate(10) hue-rotate(180deg);
+      }
+      .green-svg{
+        filter: invert(56%) sepia(82%) saturate(376%) hue-rotate(125deg) brightness(83%) contrast(90%);
+      }
+      .md-18 { font-size: 18px; }
+      .md-24 { font-size: 24px; }
+      .md-36 { font-size: 36px; }
+      .md-48 { font-size: 48px; }
+    </style>
+  </head>
+  <body>
+    <div id="app">Loading...</div>
+    <script>
+      window.$docsify = {
+        basePath: '.',
+        name: '<i class="material-icons">home</i>&nbsp;Docsify Plugin',
+      };
+    </script>
+    <!-- NOTA: No usar version corta, no carga navbar -->
+    <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://unpkg.com/docsify-themeable/dist/js/docsify-themeable.min.js"></script>
+    <script src="./docsify-material-icons.js"></script>
+  </body>
+</html>

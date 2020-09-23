@@ -1,0 +1,48 @@
+{
+  "name": "docsify-material-icons",
+  "version": "0.0.1",
+  "description": "A simple Material Icons plugin for Docsify",
+  "main": "src",
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickjx/docsify-material-icons.git"
+  },
+  "author": "Erick JA",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/erickjx/docsify-material-icons/issues"
+  },
+  "homepage": "https://github.com/erickjx/docsify-material-icons#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "4.4.1",
+    "license-checker": "latest",
+    "npm-check-updates": "latest",
+    "prettier": "2.1.2",
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "webpack src/index.js -o dist/docsify-material-icons.js --mode=development && webpack src/index.js -o example/docsify-material-icons.js --mode=development",
+    "build:prod": "webpack src/index.js -o dist/docsify-material-icons.min.js --mode=production",
+    "prettier:format": "npx prettier --write \"{,src/**/,example/**/}*.{md,json,js,ts,html,css,scss,yml}\"",
+    "prettier:check": "npx prettier --list-different \"{,src/**/,example/**/}*.{md,json,js,ts,html,css,scss,yml}\" ",
+    "example": "npm run build && npx docsify serve example --open",
+    "lic-chk": "npx license-checker",
+    "lib-chk": "npx ncu",
+    "lib-chk-up": "npx ncu -u"
+  },
+  "keywords": [
+    "Docsify",
+    "Material Icos"
+  ]
+}
