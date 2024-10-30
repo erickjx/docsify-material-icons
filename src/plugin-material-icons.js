@@ -13,7 +13,6 @@ export function install(hook) {
       const sections = m.replace(/:/gi, '').replace(/mi/gi, '').split('|');
       return `<i class="material-icons${sections[0]}">${sections[1]}</i>`;
     });
-    //console.log('miHtmlRendered: '+miHtmlRendered);
     next(miHtmlRendered);
   });
 }
